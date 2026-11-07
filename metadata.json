@@ -1,0 +1,6 @@
+{
+  "name": "Vrena Store - Top Up Game & Digital Store",
+  "description": "Vrena Store: Platform top up game resmi dan terpercaya untuk Free Fire, Mobile Legends, Roblox, FC Mobile, dan Pokemon Unite dengan pembayaran instan QRIS, DANA, dan GoPay.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

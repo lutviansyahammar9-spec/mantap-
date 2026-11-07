@@ -1,0 +1,995 @@
+MASTER PROMPT — PEMBUATAN WEBSITE KENOS STORE
+
+Buat sebuah website toko digital / top up game bernama KENOS STORE dengan kualitas desain premium, modern, minimalis, responsif, dan memiliki UI/UX yang sangat profesional.
+
+Website ini berfungsi sebagai toko top up game. Untuk tahap pertama, hanya tersedia dua game, yaitu Free Fire dan Roblox.
+
+Saya sudah menyediakan ZIP berisi seluruh gambar, banner, logo payment, gambar produk, dan aset lainnya. Semua gambar tersebut WAJIB digunakan di dalam website. Jangan membuat gambar pengganti jika aset aslinya sudah tersedia.
+
+Fokus pengerjaan pertama adalah index.html. Buat website yang benar-benar berisi, bukan sekadar kerangka HTML. Seluruh CSS dan JavaScript boleh dimasukkan langsung ke dalam index.html terlebih dahulu agar mudah dijalankan dan diperiksa. Jangan menghilangkan fitur yang sudah diminta.
+
+1. KONSEP DAN IDENTITAS WEBSITE
+
+Nama toko: KENOS STORE
+
+Jenis website:
+- Top up game.
+- Jasa gift item game.
+- Pembelian Robux.
+- Pembayaran melalui QRIS, DANA, dan GoPay.
+
+Konsep desain:
+- Modern gaming digital store.
+- Minimalis tetapi tetap terlihat premium.
+- Bersih, rapi, elegan, dan tidak terlalu ramai.
+- Memiliki animasi transisi yang halus.
+- Tidak terlihat seperti template toko online biasa.
+- Mengutamakan kenyamanan pengguna ketika membeli produk.
+
+Gunakan kombinasi warna yang cocok untuk toko gaming. Rekomendasi:
+- Background utama putih kebiruan atau dark navy.
+- Warna aksen biru elektrik atau ungu.
+- Warna teks gelap dengan kontras yang baik.
+- Warna khusus promo menggunakan oranye atau merah.
+- Gunakan gradient secara secukupnya.
+
+Sediakan dua tema:
+1. Light Mode.
+2. Dark Mode.
+
+Tambahkan tombol untuk mengganti tema di navbar. Perubahan tema harus berlaku ke seluruh halaman dan disimpan menggunakan localStorage agar tidak kembali ke tema awal ketika website direfresh.
+
+Jangan membuat logo baru untuk Kenos Store. Saya sudah menyediakan banner toko sendiri.
+
+2. WAJIB MEMBACA DAN MENGGUNAKAN SELURUH ASET ZIP
+
+Saya menyediakan file bernama PROJECT SHOP.zip.
+
+Ekstrak ZIP tersebut dan gunakan gambar berdasarkan nama serta foldernya.
+
+Struktur aset:
+
+PROJECT SHOP/
+│
+├── banner toko/
+│   └── banner toko.png
+│
+├── freefire/
+│   ├── JASA GIFT IN GAME/
+│   │   ├── ffws throne.png
+│   │   ├── permaisuri cahaya bundle.png
+│   │   ├── scar cahaya bulan.png
+│   │   ├── sultan cahaya bundle.png
+│   │   └── supergamer bundle.png
+│   │
+│   ├── MISC/
+│   │   ├── banner freefire.png
+│   │   └── card freefire.jpg
+│   │
+│   └── TOP UP/
+│       ├── bp card.webp
+│       ├── diamond freefire.png
+│       ├── member bulanan.png
+│       └── member mingguan.png
+│
+├── payment/
+│   ├── dana.webp
+│   ├── gopay.png
+│   ├── qr vrena store.jpeg
+│   └── qris.png
+│
+└── roblox/
+    ├── roblox banner.png
+    ├── roblox card.png
+    └── robux.jpg
+
+PENTING:
+- Pastikan seluruh path gambar benar.
+- Gunakan gambar asli dari ZIP, bukan emoji sebagai pengganti produk.
+- Jangan mengganti nama file secara sembarangan.
+- Gunakan object-fit: contain untuk gambar produk agar gambar tidak terpotong.
+- Gunakan object-fit: cover untuk banner jika memang diperlukan.
+- Atur ukuran setiap gambar secara proporsional.
+- Jangan sampai ada gambar yang rusak atau tidak muncul.
+- Pastikan gambar tetap tampil setelah website dijalankan.
+- Jika menggunakan struktur folder hasil ekstraksi, sesuaikan semua path dengan lokasi sebenarnya.
+
+3. HALAMAN UTAMA / HOMEPAGE
+
+Buat homepage yang menarik dan langsung memperlihatkan identitas Kenos Store.
+
+NAVBAR
+
+Navbar berada di bagian paling atas.
+
+Isi navbar:
+- Nama teks KENOS STORE.
+- Tombol Home.
+- Tombol daftar game atau produk.
+- Tombol riwayat pesanan (untuk pengembangan berikutnya).
+- Tombol Dark/Light Mode.
+- Tombol menu mobile.
+
+Navbar harus:
+- Sticky ketika pengguna scroll.
+- Memiliki background yang menyesuaikan tema.
+- Memiliki efek hover yang halus.
+- Tidak terlalu besar.
+- Responsif untuk HP.
+
+BANNER UTAMA TOKO
+
+Di bagian atas tengah homepage, tampilkan gambar:
+banner toko/banner toko.png
+
+Ini merupakan banner utama toko Kenos Store.
+
+Ketentuan:
+- Letakkan banner di tengah.
+- Ukuran cukup besar dan proporsional.
+- Sudut sedikit rounded.
+- Jangan membuat banner terlalu tinggi.
+- Tambahkan efek visual yang elegan.
+- Pastikan tidak terpotong di layar HP.
+
+Di bawah banner tambahkan tulisan:
+
+Selamat Datang di Kenos Store!
+
+Deskripsi:
+"Tempat top up game favoritmu dengan harga bersahabat, proses mudah, dan pengalaman belanja yang nyaman."
+
+Tambahkan beberapa benefit:
+- Harga Terjangkau.
+- Proses Mudah.
+- Pilihan Pembayaran.
+- Pelayanan 24 Jam (jangan mengklaim layanan benar-benar aktif 24 jam jika belum tersedia).
+
+PILIHAN GAME
+
+Di bawah banner, tampilkan judul:
+
+Pilih Game Favoritmu
+
+Tampilkan tepat dua card game pada homepage.
+
+Produk 1: Free Fire
+
+Gunakan gambar:
+freefire/MISC/card freefire.jpg
+
+Nama: Free Fire
+Deskripsi: Top Up Diamond, Membership & Jasa Gift.
+Tombol: Pilih Game
+
+Produk 2: Roblox
+
+Gunakan gambar:
+roblox/roblox card.png
+
+Nama: Roblox
+Deskripsi: Top Up Robux dengan harga terjangkau.
+Tombol: Pilih Game
+
+Desain card:
+- Gambar harus menjadi fokus utama.
+- Border radius modern.
+- Hover animation.
+- Sedikit efek scale ketika disentuh.
+- Shadow lembut.
+- Tidak terlalu banyak tulisan.
+- Kedua card memiliki ukuran yang konsisten.
+
+Ketika card diklik, pengguna diarahkan ke halaman game masing-masing.
+
+Jangan menampilkan daftar produk Free Fire dan Roblox langsung di homepage. Daftar produk hanya muncul setelah pengguna memilih game.
+
+4. HALAMAN FREE FIRE
+
+Ketika pengguna memilih Free Fire, buka halaman khusus Free Fire.
+
+Halaman ini harus memiliki tampilan berbeda dari homepage, tetapi tetap menggunakan identitas desain Kenos Store.
+
+BANNER FREE FIRE
+
+Gunakan:
+freefire/MISC/banner freefire.png
+
+Banner ditampilkan pada bagian atas halaman Free Fire.
+
+Tambahkan:
+- Judul Free Fire Top Up.
+- Deskripsi singkat.
+- Tombol kembali ke halaman utama.
+- Informasi bahwa pengguna bisa memilih Diamond, Membership, dan Jasa Gift.
+
+Buat transisi ketika berpindah dari homepage ke halaman Free Fire.
+
+BAGIAN 1 — PILIH NOMINAL
+
+Tampilkan judul:
+1. Pilih Produk
+
+Bagi produk menjadi tiga kategori:
+A. Special Item / Membership
+B. Diamond
+C. Jasa Gift In Game
+
+Setiap produk harus menggunakan gambar sesuai aset ZIP.
+
+A. SPECIAL ITEM
+
+Tampilkan tiga card berikut:
+
+1. BP Card
+- Gambar: freefire/TOP UP/bp card.webp
+- Harga: Rp15.500
+- Status: SOLD OUT.
+
+PENTING: BP Card sedang sold out.
+
+Desain:
+- Card berwarna abu-abu.
+- Gambar sedikit dibuat redup.
+- Tampilkan badge SOLD OUT.
+- Tidak dapat diklik.
+- Tidak dapat dipilih.
+- Tidak boleh masuk ke total harga.
+- Berikan cursor not-allowed.
+
+2. Member Mingguan
+- Gambar: freefire/TOP UP/member mingguan.png
+- Harga: Rp10.000.
+- Status: Tersedia.
+
+3. Member Bulanan
+- Gambar: freefire/TOP UP/member bulanan.png
+- Harga: Rp30.000.
+- Status: Tersedia.
+
+B. DIAMOND FREE FIRE
+
+Gunakan gambar:
+freefire/TOP UP/diamond freefire.png
+
+Seluruh produk Diamond harus menggunakan gambar Diamond tersebut.
+
+Buat card dengan desain konsisten dan mudah dibaca.
+
+Daftar harga normal:
+- 70 Diamond — Rp5.000
+- 140 Diamond — Rp10.000
+- 210 Diamond — Rp15.000
+- 355 Diamond — Rp23.000
+- 720 Diamond — Rp32.000
+
+Tambahkan satu produk promo khusus:
+
+1000 Diamond
+- Harga promo: Rp20.000.
+- Badge: PROMO dengan ikon api.
+- Sisa stok: 12.
+
+Produk promo harus memiliki:
+- Badge api atau ikon Flame.
+- Tulisan PROMO.
+- Harga Rp20.000.
+- Harga normal dicoret jika harga normalnya sudah ditentukan oleh pengelola.
+- Indikator stok tersisa 12.
+- Progress bar stok.
+- Tampilan lebih mencolok daripada produk normal.
+
+Tampilkan tulisan:
+"Stok promo terbatas! Segera pesan sebelum kehabisan."
+
+Jangan mengurangi stok secara acak atau setiap kali halaman direfresh. Untuk frontend demo, kelola stok melalui state dan localStorage. Siapkan struktur agar nantinya bisa dihubungkan ke backend.
+
+C. JASA GIFT IN GAME
+
+Buat kategori khusus bernama:
+Jasa Gift In Game
+
+Gunakan masing-masing gambar produk dari folder:
+freefire/JASA GIFT IN GAME/
+
+Daftar produk:
+- FFWS Throne — Rp30.000
+- SCAR Cahaya Bulan — Rp15.000
+- Supergamer Bundle — Rp25.000
+- Sultan Cahaya Bundle — Rp5.000
+- Permaisuri Cahaya Bundle — Rp5.000
+
+Mapping gambar wajib benar:
+- FFWS Throne → ffws throne.png
+- SCAR Cahaya Bulan → scar cahaya bulan.png
+- Supergamer Bundle → supergamer bundle.png
+- Sultan Cahaya Bundle → sultan cahaya bundle.png
+- Permaisuri Cahaya Bundle → permaisuri cahaya bundle.png
+
+Jangan sampai gambar produk tertukar.
+
+5. SISTEM PEMILIHAN PRODUK FREE FIRE
+
+Semua produk yang tersedia harus bisa dipilih.
+
+Ketika pengguna mengklik card:
+- Card berubah menjadi selected.
+- Tambahkan border warna aksen.
+- Tambahkan tanda centang.
+- Berikan animasi scale ringan.
+- Produk lain tetap bisa dipilih untuk mengganti pilihan.
+
+Untuk versi pertama, gunakan sistem satu produk per pesanan agar proses checkout sederhana.
+
+Di bagian bawah layar tampilkan sticky order summary.
+
+Contoh:
+
+Pesanan Kamu
+1000 Diamond
+Rp20.000
+
+[ Lanjutkan Pembayaran ]
+
+Jika belum ada produk yang dipilih, tampilkan informasi:
+"Silakan pilih produk terlebih dahulu."
+
+Harga harus berubah secara REAL-TIME ketika pengguna memilih produk lain.
+
+6. FORM DATA AKUN FREE FIRE
+
+Ketika pengguna menekan tombol:
+Lanjutkan Pembayaran
+
+Periksa apakah produk sudah dipilih.
+
+Jika belum memilih produk:
+- Tampilkan notifikasi.
+- Jangan lanjut ke halaman berikutnya.
+
+Jika sudah memilih produk:
+- Tampilkan halaman atau modal form data akun.
+
+Buat desain form yang premium dan berbeda dari halaman produk.
+
+Judul:
+Masukkan Data Akun Free Fire
+
+Input yang wajib:
+1. User ID / UID Free Fire.
+2. Nickname (opsional).
+
+Tambahkan informasi:
+"Pastikan UID yang kamu masukkan sudah benar agar pesanan tidak salah tujuan."
+
+Validasi:
+- UID wajib diisi.
+- Tidak boleh hanya berisi spasi.
+- Tampilkan pesan error jika kosong.
+- Tombol lanjut tidak dapat digunakan jika UID belum valid.
+
+Setelah valid, tombol:
+Lanjutkan ke Pembayaran
+
+akan membawa pengguna ke halaman pilihan metode pembayaran.
+
+Simpan data pesanan sementara menggunakan JavaScript state dan localStorage.
+
+7. HALAMAN PILIH METODE PEMBAYARAN
+
+Buat halaman pembayaran khusus dengan desain premium.
+
+Jangan membuatnya terlihat seperti halaman produk.
+
+Judul:
+Pilih Metode Pembayaran
+
+Tampilkan ringkasan pesanan:
+- Nama produk.
+- UID Free Fire atau username Roblox sesuai game.
+- Harga.
+- Total pembayaran.
+
+Tampilkan tiga pilihan payment dalam bentuk card:
+
+1. QRIS
+Gambar: payment/qris.png
+Nama: QRIS
+Deskripsi: Scan QRIS menggunakan aplikasi pembayaran yang mendukung QRIS.
+
+2. DANA
+Gambar: payment/dana.webp
+Nama: DANA
+Deskripsi: Transfer menggunakan aplikasi DANA.
+
+3. GoPay
+Gambar: payment/gopay.png
+Nama: GoPay
+Deskripsi: Transfer menggunakan aplikasi GoPay.
+
+Ketentuan:
+- Ketiganya harus bisa diklik.
+- Card yang dipilih memiliki border aksen.
+- Berikan animasi pemilihan.
+- Jangan menampilkan halaman ketiganya sekaligus.
+- Pengguna hanya bisa melanjutkan setelah memilih metode pembayaran.
+
+8. HALAMAN PEMBAYARAN QRIS
+
+Ketika pengguna memilih QRIS, arahkan ke halaman pembayaran QRIS.
+
+Buat halaman ini sangat rapi, minimalis, dan profesional.
+
+Tambahkan:
+- Tombol kembali.
+- Judul Pembayaran QRIS.
+- Countdown timer.
+- Informasi pesanan.
+- QR Code.
+- Upload bukti transfer.
+
+Gunakan gambar QR:
+payment/qr vrena store.jpeg
+
+Tampilkan gambar QR dengan ukuran cukup besar dan mudah dipindai.
+
+COUNTDOWN TIMER
+
+Buat timer selama 10 MENIT.
+
+Format: 10:00
+
+Timer berjalan otomatis ketika halaman pembayaran QRIS dimulai.
+
+Ketentuan:
+- Hitung mundur setiap detik.
+- Tampilkan menit dan detik.
+- Simpan waktu kedaluwarsa menggunakan timestamp agar tidak reset ketika direfresh.
+- Jika waktu habis, tampilkan halaman atau popup pembayaran kedaluwarsa.
+- Sediakan tombol kembali untuk membuat pesanan baru.
+
+INFORMASI PEMBAYARAN
+
+Tampilkan:
+- Nama produk.
+- UID Free Fire atau username Roblox.
+- Total harga.
+- Metode pembayaran QRIS.
+
+Contoh:
+
+Detail Pesanan
+1000 Diamond
+UID: 123456789
+Total Pembayaran
+Rp20.000
+
+UPLOAD BUKTI TRANSFER
+
+Buat komponen upload bukti transfer.
+
+Fitur:
+- Tombol Pilih File.
+- Bisa memilih gambar dari galeri HP.
+- Bisa memilih file dari perangkat.
+- Tampilkan preview gambar setelah dipilih.
+- Tampilkan nama file.
+- Berikan tombol ganti gambar.
+- Berikan tombol hapus gambar.
+
+Validasi:
+- Bukti transfer wajib diunggah.
+- Jika belum ada bukti, tombol "Saya Sudah Transfer" tidak bisa diklik.
+- Tampilkan keterangan "Silakan unggah bukti pembayaran terlebih dahulu."
+- Setelah file dipilih, tombol bisa diaktifkan selama timer belum habis.
+
+Tombol utama:
+Saya Sudah Transfer
+
+Ketika diklik:
+- Tampilkan loading singkat.
+- Simpan data pesanan.
+- Pindahkan pengguna ke halaman pembayaran berhasil.
+
+PENTING: Karena tahap ini hanya frontend, upload bukti transfer dan status pembayaran masih berupa simulasi lokal. Jangan mengklaim QRIS sudah memverifikasi pembayaran otomatis. Siapkan struktur kode agar nantinya bisa dihubungkan ke sistem backend/admin.
+
+9. HALAMAN PEMBAYARAN DANA DAN GOPAY
+
+Untuk DANA dan GoPay, buat halaman yang berbeda dari QRIS.
+
+Ketika pengguna memilih DANA atau GoPay, tampilkan:
+
+Judul:
+Pembayaran DANA atau Pembayaran GoPay
+
+Nomor tujuan untuk keduanya:
+0851-1736-4018
+
+Tampilkan nomor tersebut dalam card yang jelas dan besar.
+
+Tambahkan tombol:
+Salin Nomor
+
+Ketika ditekan, nomor langsung disalin ke clipboard dan tampilkan notifikasi "Nomor berhasil disalin".
+
+Tampilkan:
+- Logo DANA atau GoPay sesuai metode yang dipilih.
+- Nomor tujuan.
+- Nama produk.
+- UID Roblox atau UID Free Fire sesuai game.
+- Total pembayaran.
+
+Selanjutnya tampilkan bagian:
+Upload Bukti Transfer
+
+Fungsinya sama seperti upload QRIS:
+- Pilih file.
+- Preview bukti transfer.
+- Ganti file.
+- Hapus file.
+- Validasi wajib upload.
+
+Tombol:
+Lanjutkan Pembayaran
+
+Tombol tidak aktif jika bukti transfer belum dipilih.
+
+Setelah bukti diunggah dan tombol ditekan, arahkan ke halaman pembayaran berhasil.
+
+Tidak perlu countdown untuk DANA dan GoPay.
+
+10. HALAMAN PEMBAYARAN BERHASIL
+
+Ini merupakan salah satu bagian terpenting.
+
+Buat halaman sukses yang sangat bagus, berbeda dari seluruh halaman sebelumnya.
+
+Desain:
+- Background halaman di-blur.
+- Tampilkan modal atau panel sukses di tengah.
+- Gunakan animasi masuk yang smooth.
+- Tambahkan ikon centang sukses.
+- Tambahkan efek glow lembut.
+- Jangan terlalu banyak warna.
+- Gunakan desain premium dan bersih.
+
+Judul:
+Pembayaran Berhasil!
+
+Deskripsi untuk Free Fire:
+"Diamond akan dikirim dalam 1x24 jam."
+
+Untuk Roblox, gunakan deskripsi:
+"Robux akan diproses sesuai pesanan. Estimasi pengiriman 1x24 jam."
+
+Tampilkan ringkasan:
+- Nomor pesanan.
+- Nama game.
+- Nama produk.
+- Data akun.
+- Metode pembayaran.
+- Total pembayaran.
+- Bukti transfer yang sudah diunggah.
+
+Tambahkan status:
+Menunggu Proses Pesanan
+
+Jangan mengklaim pembayaran sudah terverifikasi otomatis karena ini masih frontend.
+
+Tombol utama:
+Kembali ke Halaman Utama
+
+Ketika diklik:
+- Tutup halaman sukses.
+- Kembali ke homepage.
+- Jangan menghapus data pesanan yang sudah tersimpan.
+
+Tambahkan animasi checkmark yang muncul dengan smooth.
+
+11. HALAMAN ROBLOX
+
+Roblox memiliki alur pembelian yang hampir sama dengan Free Fire, tetapi produk dan form datanya berbeda.
+
+Ketika pengguna memilih card Roblox di homepage, buka halaman khusus Roblox.
+
+BANNER ROBLOX
+
+Gunakan:
+roblox/roblox banner.png
+
+Tampilkan banner dengan desain menarik.
+
+Judul:
+Roblox Top Up
+
+Deskripsi:
+"Top up Robux dengan mudah dan praktis di Kenos Store."
+
+Tambahkan tombol kembali ke homepage.
+
+DAFTAR PRODUK ROBUX
+
+Gunakan gambar:
+roblox/robux.jpg
+
+Semua card Robux wajib menggunakan gambar tersebut.
+
+Daftar harga:
+- 80 Robux — Rp5.000
+- 160 Robux — Rp10.000
+- 220 Robux — Rp15.000
+- 350 Robux — Rp20.000
+
+Buat card produk:
+- Gambar Robux.
+- Nama nominal.
+- Harga.
+- Efek hover.
+- Indikator selected.
+- Animasi pemilihan.
+
+Sistem pemilihan sama seperti Free Fire.
+
+Di bagian bawah tampilkan sticky order summary yang berubah secara real-time.
+
+12. FORM DATA AKUN ROBLOX
+
+Ketika pengguna memilih Robux dan menekan tombol lanjutkan pembayaran, jangan meminta UID Free Fire.
+
+Roblox menggunakan:
+Username Roblox
+
+Buat halaman form:
+
+Judul:
+Masukkan Username Roblox
+
+Input wajib:
+- Username Roblox.
+
+Tambahkan deskripsi:
+"Pastikan username Roblox yang kamu masukkan benar sebelum melanjutkan pesanan."
+
+Validasi:
+- Username wajib diisi.
+- Tidak boleh kosong.
+- Tidak boleh hanya spasi.
+- Tampilkan pesan error jika belum diisi.
+
+Tombol:
+Lanjutkan ke Pembayaran
+
+Setelah username valid, pengguna masuk ke halaman pilihan payment.
+
+Sistem payment Roblox sama dengan Free Fire:
+- QRIS.
+- DANA.
+- GoPay.
+
+Semua halaman pembayaran harus menampilkan nama game, username, produk, dan harga sesuai pesanan Roblox.
+
+Jangan sampai data Free Fire dan Roblox tertukar.
+
+13. SISTEM NAVIGASI DAN PERPINDAHAN HALAMAN
+
+Walaupun menggunakan satu file index.html, buat struktur halaman seperti aplikasi multi-page.
+
+Gunakan JavaScript untuk mengelola tampilan halaman atau view.
+
+Minimal halaman yang harus tersedia:
+1. Homepage.
+2. Halaman Free Fire.
+3. Halaman Roblox.
+4. Form UID Free Fire.
+5. Form Username Roblox.
+6. Pilihan pembayaran.
+7. Pembayaran QRIS.
+8. Pembayaran DANA.
+9. Pembayaran GoPay.
+10. Pembayaran berhasil.
+11. Pembayaran kedaluwarsa.
+
+Setiap halaman harus memiliki desain yang konsisten tetapi tetap memiliki layout sesuai fungsinya.
+
+PENTING:
+Jangan hanya mengganti isi teks di satu card yang sama. Buat setiap halaman memiliki layout yang sesuai dengan kebutuhan.
+
+Gunakan:
+- Smooth transition.
+- Fade in.
+- Slide up.
+- Scale animation.
+- Loading animation.
+- Modal animation.
+
+Pastikan tombol kembali bekerja dengan benar dan tidak menghapus data pesanan secara tidak sengaja.
+
+Gunakan browser history jika memungkinkan agar tombol Back Android juga bekerja dengan baik.
+
+14. FITUR TAMBAHAN YANG HARUS DIBUAT
+
+A. TOAST NOTIFICATION
+
+Buat notifikasi kecil yang muncul ketika:
+- Produk berhasil dipilih.
+- Nomor payment berhasil disalin.
+- Bukti transfer berhasil diunggah.
+- Data berhasil disimpan.
+- Input belum lengkap.
+- Terjadi kesalahan.
+
+Toast harus memiliki animasi masuk dan keluar.
+
+B. LOADING SCREEN
+
+Buat loading singkat ketika:
+- Berpindah halaman.
+- Memproses checkout.
+- Memproses simulasi pembayaran.
+
+Jangan membuat loading terlalu lama.
+
+C. KONFIRMASI PESANAN
+
+Sebelum pengguna benar-benar masuk ke pembayaran, pastikan ringkasan produk sudah benar.
+
+D. STICKY BOTTOM CHECKOUT
+
+Pada HP, ringkasan pesanan dan tombol checkout berada di bagian bawah layar.
+
+Jangan sampai menutupi produk atau input.
+
+E. VALIDASI INPUT
+
+Semua input harus memiliki validasi yang benar.
+
+Jangan hanya mengandalkan atribut required tanpa memberikan pesan error yang bagus.
+
+F. RIWAYAT PESANAN
+
+Buat fitur riwayat pesanan sederhana menggunakan localStorage.
+
+Simpan:
+- Nomor pesanan.
+- Game.
+- Produk.
+- Harga.
+- Data akun.
+- Metode pembayaran.
+- Waktu pesanan.
+- Status pesanan.
+
+Status awal:
+Menunggu Proses.
+
+Buat halaman riwayat sederhana yang bisa dibuka dari navbar.
+
+G. RESPONSIF
+
+Website wajib nyaman digunakan di:
+- Android.
+- iPhone.
+- Tablet.
+- Laptop.
+- Desktop.
+
+Prioritaskan desain mobile-first karena mayoritas pelanggan kemungkinan menggunakan HP.
+
+Pastikan:
+- Tidak ada horizontal overflow.
+- Card tidak terlalu kecil.
+- Gambar tidak terpotong.
+- Form mudah diisi.
+- Tombol mudah ditekan.
+- Navbar mobile tidak berantakan.
+- Modal tidak keluar dari layar.
+- Sticky checkout tidak menutupi navigasi.
+
+15. DETAIL DESAIN DAN ANIMASI
+
+Saya ingin desain yang benar-benar terasa premium.
+
+TYPOGRAPHY
+- Gunakan font modern seperti Inter, Plus Jakarta Sans, atau Manrope.
+- Judul tegas dan jelas.
+- Deskripsi tidak terlalu besar.
+- Harga menjadi salah satu elemen paling mudah dilihat.
+
+CARD
+- Rounded corner sekitar 14–20px.
+- Shadow lembut.
+- Border tipis.
+- Hover smooth.
+- Selected state yang jelas.
+
+BUTTON
+- Memiliki hover dan active state.
+- Transisi sekitar 200–300ms.
+- Tidak terlihat kaku.
+- Gunakan ikon yang sesuai.
+
+ANIMATION
+- Fade in.
+- Slide up.
+- Scale.
+- Checkmark animation.
+- Toast animation.
+- Modal transition.
+- Loading spinner.
+
+Jangan menggunakan animasi berlebihan yang menyebabkan website lambat.
+
+Gunakan ikon dari Lucide, Iconify, atau Font Awesome. Jangan menggunakan emoji sebagai ikon utama UI jika tersedia ikon profesional yang lebih sesuai.
+
+DARK MODE
+- Background navy atau charcoal.
+- Card sedikit lebih terang dari background.
+- Teks putih dengan kontras yang baik.
+- Border tetap terlihat.
+- Gambar produk tidak boleh ikut menjadi gelap sampai tidak terlihat.
+
+LIGHT MODE
+- Background putih atau off-white.
+- Card putih.
+- Teks gelap.
+- Shadow lembut.
+- Aksen warna yang konsisten.
+
+16. STRUKTUR JAVASCRIPT DAN PENGELOLAAN DATA
+
+Walaupun sekarang hanya frontend, tulis kode dengan struktur yang rapi agar nantinya mudah dikembangkan menjadi website toko sungguhan.
+
+Buat data produk menggunakan array atau object.
+
+Contohnya:
+- Data game.
+- Data produk Free Fire.
+- Data produk Roblox.
+- Data payment.
+- Data pesanan.
+
+Jangan menulis setiap card secara manual jika bisa dibuat melalui rendering JavaScript yang terstruktur.
+
+Buat fungsi terpisah untuk:
+- Render homepage.
+- Render halaman game.
+- Memilih produk.
+- Memperbarui harga.
+- Validasi UID.
+- Validasi username.
+- Menampilkan payment.
+- Upload bukti transfer.
+- Menyimpan pesanan.
+- Mengelola countdown.
+- Mengelola tema.
+- Menampilkan notifikasi.
+- Mengelola riwayat pesanan.
+
+Gunakan localStorage untuk:
+- Tema.
+- Data pesanan.
+- Riwayat pesanan.
+- Stok promo demo.
+- Data checkout sementara.
+
+Gunakan sessionStorage atau mekanisme state yang sesuai untuk data sementara.
+
+Pastikan file bukti transfer bisa dipreview dengan FileReader atau URL.createObjectURL. Jangan menyimpan gambar berukuran besar sebagai data permanen tanpa batas.
+
+PENTING:
+Website ini masih frontend-only. Jangan berpura-pura memiliki backend, database, verifikasi pembayaran otomatis, atau sistem pengiriman otomatis. Semua proses pembayaran dan upload bukti masih simulasi lokal. Buat struktur kode yang nantinya mudah disambungkan ke backend dan dashboard admin.
+
+17. KETENTUAN YANG TIDAK BOLEH DILANGGAR
+
+1. Jangan membuat index.html kosong.
+2. Jangan hanya membuat homepage tanpa halaman produk.
+3. Jangan menghilangkan produk yang sudah disebutkan.
+4. Jangan mengubah harga produk.
+5. BP Card harus SOLD OUT dan tidak bisa dipilih.
+6. Promo 1000 Diamond harus Rp20.000 dengan stok awal 12.
+7. Semua gambar harus menggunakan aset asli ZIP.
+8. Jangan membuat logo toko baru.
+9. Jangan menggunakan gambar random dari internet untuk mengganti gambar yang sudah disediakan.
+10. Semua tombol wajib mempunyai fungsi.
+11. Jangan membuat tombol yang hanya menjadi dekorasi.
+12. Form UID Free Fire harus berbeda dengan form Username Roblox.
+13. Payment QRIS harus menampilkan QR Vrena Store.
+14. Payment DANA dan GoPay harus menggunakan nomor 0851-1736-4018.
+15. Upload bukti transfer wajib sebelum pengguna bisa menekan tombol konfirmasi.
+16. Timer QRIS harus 10 menit.
+17. Halaman sukses harus mempunyai desain khusus dan background blur.
+18. Semua harga harus dihitung secara dinamis.
+19. Dark Mode dan Light Mode harus berfungsi.
+20. Semua halaman harus responsif.
+21. Jangan sampai data pesanan Roblox dan Free Fire tercampur.
+22. Jangan membuat website terlalu ramai.
+23. Jangan menghapus fitur yang sudah berhasil dibuat ketika melakukan revisi.
+
+18. URUTAN PENGERJAAN
+
+TAHAP 1 — HOMEPAGE
+- Navbar.
+- Banner toko.
+- Deskripsi toko.
+- Dua card game.
+- Dark/Light Mode.
+- Responsivitas.
+
+TAHAP 2 — HALAMAN FREE FIRE
+- Banner Free Fire.
+- Special Item.
+- Diamond.
+- Promo.
+- Jasa Gift.
+- Sistem pemilihan produk.
+- Ringkasan harga.
+
+TAHAP 3 — HALAMAN ROBLOX
+- Banner Roblox.
+- Daftar Robux.
+- Pemilihan produk.
+- Ringkasan harga.
+
+TAHAP 4 — CHECKOUT
+- Form UID.
+- Form Username.
+- Validasi.
+- Ringkasan pesanan.
+
+TAHAP 5 — PAYMENT
+- Pilihan QRIS, DANA, GoPay.
+- Halaman QRIS.
+- Countdown 10 menit.
+- Halaman DANA.
+- Halaman GoPay.
+- Upload bukti transfer.
+
+TAHAP 6 — SUKSES DAN RIWAYAT
+- Halaman pembayaran berhasil.
+- Animasi sukses.
+- Riwayat pesanan.
+- Penyimpanan localStorage.
+
+TAHAP 7 — FINISHING
+- Perbaiki seluruh bug.
+- Periksa seluruh gambar.
+- Periksa semua tombol.
+- Periksa semua navigasi.
+- Periksa dark mode.
+- Periksa tampilan HP dan desktop.
+- Optimalkan animasi.
+- Pastikan tidak ada error JavaScript di console.
+
+19. OUTPUT YANG SAYA INGINKAN
+
+Untuk tahap pertama, hasilkan:
+
+index.html
+
+Satu file HTML lengkap yang sudah berisi:
+- Struktur HTML.
+- CSS internal.
+- JavaScript internal.
+- Semua halaman.
+- Semua fitur yang dijelaskan.
+- Semua gambar yang sudah terhubung ke folder aset.
+
+Jangan hanya memberikan contoh kode atau potongan kode.
+
+Jangan berhenti setelah membuat homepage.
+
+Pastikan seluruh alur dari memilih game → memilih produk → memasukkan data akun → memilih pembayaran → mengunggah bukti transfer → halaman sukses benar-benar bisa dicoba.
+
+Jika ukuran kode sangat besar, tetap prioritaskan kelengkapan fitur dan kualitas implementasi. Jangan memotong kode atau mengganti fitur dengan placeholder.
+
+Setelah selesai, lakukan pengecekan menyeluruh terhadap seluruh website.
+
+TARGET AKHIR:
+
+Saya ingin Kenos Store terlihat seperti website top up game profesional yang siap dikembangkan menjadi toko sungguhan, bukan sekadar tugas HTML biasa.
+
+Desain harus modern, smooth, premium, minimalis, mobile-friendly, dan memiliki pengalaman checkout yang nyaman.
+
+Ingat: gunakan seluruh aset yang sudah saya berikan. Jangan sampai gambar-gambar di ZIP hanya menjadi pajangan folder dan tidak masuk ke website.
+
+Mulai kerjakan dari index.html sekarang.
